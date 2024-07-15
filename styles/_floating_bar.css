@@ -1,0 +1,37 @@
+
+.float {
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 70%;
+    box-shadow: 0px 0px 20px 2px;
+}
+
+.floatingSkills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    display: inline-block;
+    animation: floatingSkills 8s linear infinite;
+}
+
+.floatingSkills:nth-child(2) {
+    animation: floatingSkills 8s linear infinite;
+}
+
+.floatingSkills img {
+    max-width: 10%;
+    margin-left: 1rem;
+    object-fit: contain;
+}
+
+@keyframes floatingSkills {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

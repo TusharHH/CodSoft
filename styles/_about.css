@@ -1,0 +1,45 @@
+.aboutPage{text-align: center;padding-top: 50px;}
+.aboutPage .heading{font-size: 2rem; font-weight: 700;color: var(--text-color-fancy);cursor: pointer;}
+
+.section{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+
+.aboutPage .Skills ,.Exprience ,.Education{
+    background-color: red;
+    min-height: 60vh;
+    
+}
+
+.skillsBar div{
+    color: var(--text-color-fancy);
+}
+.slider{
+    width: 10rem;
+    height: 1.5rem;
+    background-color: var(--text-color);
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.slider .value{
+    width: 90%;
+    height: 1.5rem;
+    background-color: var(--text-color-fancy);
+    border-radius: 100px;
+}
+
+.skillsBar :nth-child(4) .value{
+    width: 80%;
+}
+.skillsBar :nth-child(6) .value{
+    width: 60%;
+}
+.skillsBar :nth-child(8) .value{
+    width: 40%;
+}
+
+.none{display: none}

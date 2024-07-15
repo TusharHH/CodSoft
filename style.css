@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(./styles/_homePage.css);
+@import url(./styles/_projects.css);
+@import url(./styles/_about.css);
+@import url(./styles/_footer.css);
+
+:root {
+    --background-color: rgb(111,111,111);
+    --orange: orange;
+    --red: red;
+    --text-color: black;
+    --text-color-fancy:rgb(255, 77, 0);
+}
+
+[data-theme="dark-mode"] {
+    --background-color: rgb(46, 44, 44);
+    --orange:rgb(255, 128, 0);
+    --red: rgb(246, 60, 40);
+    --text-color: white;
+    --text-color-fancy:rgb(73, 200, 255);
+}
+
+li > img {
+    display: none;
+}
+
+li > img[data-img-visiblity="visible"] {
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+ul > li{
+    list-style: none;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.shadow{
+    text-shadow: 0px 0px 14px;
+}
+.shadowBox{
+    box-shadow: 0px 0px 12px 2px var(--text-color-fancy);
+}
